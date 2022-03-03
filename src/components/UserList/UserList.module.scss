@@ -1,0 +1,29 @@
+.user {
+  display: flex;
+  flex-direction: column;
+  min-width: 1200px;
+  margin-top: 2%;
+  & .item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    margin: 10px 0;
+    padding: 15px;
+
+    position: relative;
+  }
+  & .item span {
+    margin: 5px 0;
+  }
+  & .icon {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+    transition: transform .3s ease;
+    &:hover{
+      transform: rotate(180deg);
+    }
+  }
+}
